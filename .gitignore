@@ -1,0 +1,13 @@
+/build*/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/main/secrets.h
+*.bin
+*.elf
+*.map
+*.log
+*.zip
+__pycache__/
+.env
+.env.*

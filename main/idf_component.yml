@@ -1,0 +1,10 @@
+dependencies:
+  idf: ">=6.0.0,<6.1.0"
+  lvgl/lvgl: "==9.5.0"
+  waveshare/esp32_p4_platform: "==2.0.1"
+  usb_host_hid: "^1.0.1"
+  espressif/cjson: "^1.7.19"
+  espressif/esp_wifi_remote: ">=1.6,<2.0"
+  # The factory C6 coprocessor reports ESP-Hosted 3.0. Keep the P4 host on
+  # the same protocol generation so Wi-Fi and BLE can share SDIO reliably.
+  espressif/esp_hosted: ">=3.0,<4.0"

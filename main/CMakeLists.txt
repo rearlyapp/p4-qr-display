@@ -1,0 +1,34 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "stockin_ui.c"
+        "packing_visual.c"
+        "fonts/ui_bold_20.c"
+        "fonts/ui_bold_28.c"
+        "fonts/ui_bold_40.c"
+        "fonts/ui_bold_48.c"
+        "barcode_scanner.c"
+        "wireless.c"
+        "network_setup.c"
+        "network_web.c"
+        "stockin_api.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        esp32_p4_platform
+        esp_http_client
+        esp_event
+        esp_netif
+        esp_wifi
+        esp_eth
+        esp_http_server
+        spi_flash
+        nvs_flash
+        cjson
+        bt
+        esp_hosted
+        usb_host_hid
+        usb
+    EMBED_FILES
+        "assets/rearly_logo.png"
+        "assets/network_setup.html"
+)
